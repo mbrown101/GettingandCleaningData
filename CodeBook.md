@@ -6,3 +6,4 @@ The data for this project is collected from the accelerometers from the Samsung 
 The data can be accessed from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 ### Description of run_analysis.R 
+Initial condition: all files from the data source zip file (noted above) are in the R working directory
