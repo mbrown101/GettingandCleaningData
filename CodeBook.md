@@ -6,4 +6,12 @@ The data for this project is collected from the accelerometers from the Samsung 
 The data can be accessed from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 ### Description of run_analysis.R 
-Initial condition: all files from the data source zip file (noted above) are in the R working directory
+Initial condition: all files from the data source zip file (noted above) are UNZIPPED in the R working directory
+
+Programatic Steps:
+
++ Merge each training and test data set into one data set
++ Extract  measurements on teh mean and standard deviation for each measurement
++ Add descriptive activities to data set
++ Label data descriptively
++ Create second, independent tidy data set weith the average of each variable for each activity and each subject
