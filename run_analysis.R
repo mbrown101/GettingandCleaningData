@@ -57,7 +57,6 @@ data.tidy.colnames <- gsub('tGravity', 'TimeDomainGravity' , data.tidy.colnames)
 data.tidy.colnames <- gsub('fBody', 'FrequencyDomain' , data.tidy.colnames)
 data.tidy.colnames <- gsub("()", '' , data.tidy.colnames , fixed=TRUE)
 
-
 colnames(data.tidy) <- data.tidy.colnames
 
 
@@ -66,3 +65,4 @@ require(stats)
 x <- as.factor(colnames(data.tidy))
 y <- as.factor(activity.labels[,2])
 #xt <- xtabs(mean(data.tidy[data.tidy[,x]==y , data.tidy[y,]==x]))
+tidy.components <- split(data.tidy ,data.tidy[,1:2] , drop = FALSE )
