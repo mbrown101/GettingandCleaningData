@@ -4,7 +4,7 @@
 ### Read in data
 x.test <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt')
 y.test <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt')
-subject.test <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/test/subject_text.txt')
+subject.test <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt')
 x.train <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt')
 y.train <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt')
 subject.train <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt')
@@ -18,18 +18,20 @@ colnames(x.train) <- features[,2]
 colnames(x.test) <- features[,2]
 colnames(y.test) <- 'activity.index'
 colnames(y.train) <- 'activity.index'
+colnames(subject.test) <- 'subject'
+colnames(subject.train) <- 'subject'
 
 ### combine test and training data
-data.test <- cbind(y.test , x.test )
-data.train <- cbind(y.train , x.train)
+data.test <- cbind(subject.test, y.test , x.test )
+data.train <- cbind(subject.train, y.train , x.train)
 data <- rbind(data.test ,data.train)
 
 ### step 2
 ### find only those rows that are mean or std
 ### note: need to grep for the string 'mean()' to avoid the string 'meanfreq'  
-data.meanstd <- grep("mean()|std()|activity" , colnames(data))
+data.meanstd <- grep("subject|mean()|std()|activity" , colnames(data))
 
-### select only that data with mean or std in their title and add col 1 which is activity
+### select only that data with 'subject', 'mean()' or 'std()' or 'activity' in their title 
 data.filterd <- data[,data.meanstd]
 
 
@@ -37,10 +39,11 @@ data.filterd <- data[,data.meanstd]
 ### merge the activity labels
 colnames(activity.labels) <- cbind('activity.index' , 'activity')
 data.activity <- merge( activity.labels , data , by.x = "activity.index"  , by.y = "activity.index" )
-data.tidy <- data.activity[,2:length(names(data.activity))]
+data.tidy <- data.activity[,grep('^activity.index' , colnames(data.activity))]
 
 ### Step 4 rename variables
-
+data.tidy.colnames <- colnames(data.tidy)
+gsub('Acc', 'Acceleration' , data.tidy.colnames)
 
 ### step 5 create xtab with adn average of each variable for each activity and each subject
 require(stats)
