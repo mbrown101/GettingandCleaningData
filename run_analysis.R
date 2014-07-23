@@ -17,8 +17,8 @@ activity.labels <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/activity_labe
 ### Assign column names using the features table
 colnames(x.train) <- features[,2]
 colnames(x.test) <- features[,2]
-colnames(y.test) <- 'activity.index'
-colnames(y.train) <- 'activity.index'
+colnames(y.test) <- 'act.index'
+colnames(y.train) <- 'act.index'
 colnames(subject.test) <- 'subject'
 colnames(subject.train) <- 'subject'
 
@@ -30,7 +30,7 @@ data <- rbind(data.test ,data.train)
 ### step 2
 ### find only those rows that are mean or std
 ### note: need to grep for the string 'mean()' to avoid the string 'meanfreq'  
-data.meanstd <- grep("subject|mean()|std()|activity" , colnames(data))
+data.meanstd <- grep("subject|mean()|std()|act.index" , colnames(data))
 
 ### select only that data with 'subject', 'mean()' or 'std()' or 'activity' in their title 
 data.filtered <- data[,data.meanstd]
@@ -38,18 +38,19 @@ data.filtered <- data[,data.meanstd]
 
 ### step 3
 ### merge the activity labels
-colnames(activity.labels) <- cbind('activity.index' , 'activity')
-data.activity <- merge( activity.labels , data.filtered , by.x = "activity.index"  , by.y = "activity.index" )
-#tidy.cols <- grep(^'activity.index' , colnames(data.activity))
+colnames(activity.labels) <- cbind('act.index' , 'activity')
+data.activity <- merge( activity.labels , data.filtered , by.x = "act.index"  , by.y = "act.index" )
 data.tidy <- data.activity[,2:length(colnames(data.activity))]
 
 ### Step 4 rename variables
 data.tidy.colnames <- colnames(data.tidy)
-data.tidy.colnames <- gsub('Acc', 'Acceleration' , data.tidy.colnames)
+data.tidy.colnames <- gsub('Acc', 'acceleration' , data.tidy.colnames)    # change Acc > acceleration
+data.tidy.colnames <- gsub('mean()', 'mean value' , data.tidy.colnames)  # change 
+data.tidy.colnames <- gsub('std()', 'Standard deviation' , data.tidy.colnames)  # change 
 colnames(data.tidy) <- data.tidy.colnames
 
 
-### step 5 create xtab with adn average of each variable for each activity and each subject
+### step 5 create xtab with an average of each variable for each activity for each subject
 require(stats)
 x <- as.factor(colnames(data.tidy))
 y <- as.factor(activity.labels[,2])
