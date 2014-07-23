@@ -4,8 +4,11 @@
 ### Read in data
 x.test <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt')
 y.test <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt')
+subject.test <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/test/subject_text.txt')
 x.train <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt')
 y.train <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt')
+subject.train <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt')
+
 features <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/features.txt')
 activity.labels <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/activity_labels.txt')
 
@@ -35,3 +38,12 @@ data.filterd <- data[,data.meanstd]
 colnames(activity.labels) <- cbind('activity.index' , 'activity')
 data.activity <- merge( activity.labels , data , by.x = "activity.index"  , by.y = "activity.index" )
 data.tidy <- data.activity[,2:length(names(data.activity))]
+
+### Step 4 rename variables
+
+
+### step 5 create xtab with adn average of each variable for each activity and each subject
+require(stats)
+x <- as.factor(colnames(data.tidy))
+y <- as.factor(activity.labels[,2])
+#xt <- xtabs(mean(data.tidy[data.tidy[,x]==y , data.tidy[y,]==x]))
