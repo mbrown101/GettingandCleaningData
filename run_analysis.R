@@ -44,9 +44,20 @@ data.tidy <- data.activity[,2:length(colnames(data.activity))]
 
 ### Step 4 rename variables
 data.tidy.colnames <- colnames(data.tidy)
-data.tidy.colnames <- gsub('Acc', 'acceleration' , data.tidy.colnames)    # change Acc > acceleration
-data.tidy.colnames <- gsub('mean()', 'mean value' , data.tidy.colnames)  # change 
-data.tidy.colnames <- gsub('std()', 'Standard deviation' , data.tidy.colnames)  # change 
+
+data.tidy.colnames <- gsub('Acc', 'Acceleration' , data.tidy.colnames)    
+data.tidy.colnames <- gsub('-mean()', 'MeanValue' , data.tidy.colnames)   
+data.tidy.colnames <- gsub('-std()', 'StandardDeviation' , data.tidy.colnames) 
+data.tidy.colnames <- gsub("Freq()", 'Frequency' , data.tidy.colnames , fixed=TRUE)
+data.tidy.colnames <- gsub("()-X", 'Xaxis' , data.tidy.colnames)  
+data.tidy.colnames <- gsub('-Y', 'Yaxis' , data.tidy.colnames) 
+data.tidy.colnames <- gsub('-Z', 'Zaxis' , data.tidy.colnames) 
+data.tidy.colnames <- gsub('tBody', 'TimeDomainBody' , data.tidy.colnames)  
+data.tidy.colnames <- gsub('tGravity', 'TimeDomainGravity' , data.tidy.colnames)
+data.tidy.colnames <- gsub('fBody', 'FrequencyDomain' , data.tidy.colnames)
+data.tidy.colnames <- gsub("()", '' , data.tidy.colnames , fixed=TRUE)
+
+
 colnames(data.tidy) <- data.tidy.colnames
 
 
