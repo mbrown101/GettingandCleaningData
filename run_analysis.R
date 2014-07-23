@@ -6,6 +6,10 @@ y.test <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt')
 x.train <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt')
 y.train <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt')
 features <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/features.txt')
+colnames(x.train) <- features[,2]
+colnames(x.test) <- features[,2]
+colnames(y.test) <- 'activity'
+colnames(y.train) <- 'activity'
 activity.labels <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/activity_labels.txt')
 
 data.test <- cbind(y.test , x.test )
