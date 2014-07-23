@@ -10,13 +10,20 @@ The purpose of this project is to demonstrate the ability to collect, work with,
      - CodeBook.md which is a code book describing variables, data, and transformations to clean the data
      - README.md which explains how all of the scripts work and how they are connected.  
 
-One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained: 
+One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description of how the data was obtained is here: 
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-Here are the data for the project: 
+Project data is here: 
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+Column labels were ehnanced with the following transformations using gsub():
+     - Expanded abbreviations
+     - Written in camel case due to the length of the label (normally would have preferred to maintain lower case)
+     - Removed spaces, dashes and special characters 
+      
+
 
 The script used to produce the tidy data set achieves the following: 
 
