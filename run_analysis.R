@@ -1,6 +1,7 @@
 ### run_analysis.R is the R script used to construct the tidy data set.  
 ### This code requires the samsung data to be in the working directory
 
+
 ### Read in data
 x.test <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt')
 y.test <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt')
@@ -38,13 +39,15 @@ data.filterd <- data[,data.meanstd]
 ### step 3
 ### merge the activity labels
 colnames(activity.labels) <- cbind('activity.index' , 'activity')
-data.activity <- merge( activity.labels , data , by.x = "activity.index"  , by.y = "activity.index" )
+data.activity <- merge( activity.labels , data.filtered , by.x = "activity.index"  , by.y = "activity.index" )
 #tidy.cols <- grep(^'activity.index' , colnames(data.activity))
 data.tidy <- data.activity[,2:length(colnames(data.activity))]
 
 ### Step 4 rename variables
 data.tidy.colnames <- colnames(data.tidy)
-gsub('Acc', 'Acceleration' , data.tidy.colnames)
+data.tidy.colnames <- gsub('Acc', 'Acceleration' , data.tidy.colnames)
+colnames(data.tidy) <- data.tidy.colnames
+
 
 ### step 5 create xtab with adn average of each variable for each activity and each subject
 require(stats)
