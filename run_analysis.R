@@ -33,7 +33,7 @@ data <- rbind(data.test ,data.train)
 data.meanstd <- grep("subject|mean()|std()|activity" , colnames(data))
 
 ### select only that data with 'subject', 'mean()' or 'std()' or 'activity' in their title 
-data.filterd <- data[,data.meanstd]
+data.filtered <- data[,data.meanstd]
 
 
 ### step 3
