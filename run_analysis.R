@@ -21,4 +21,14 @@ data.train <- cbind(y.train , x.train)
 data <- rbind(data.test ,data.train)
 
 ### find only those rows that are mean or std
-data.meanstd <- grep("mean|std" , colnames(data))
+### note: need to grep for the string 'mean()' to avoid the string 'meanfreq'  
+data.meanstd <- grep("mean()|std()|activity" , colnames(data))
+
+### select only that data with mean or std in their title and add col 1 which is activity
+data.filterd <- data[,data.meanstd]
+
+
+
+### merge the activity  labels
+#data.activity <- merge( data , activity.labels , by.x = "activity"  , by.y = "V1" )
+
