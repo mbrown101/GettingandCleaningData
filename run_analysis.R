@@ -9,17 +9,19 @@ y.train <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt')
 features <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/features.txt')
 activity.labels <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/activity_labels.txt')
 
+### step 1
 ### Assign column names using the features table
 colnames(x.train) <- features[,2]
 colnames(x.test) <- features[,2]
-colnames(y.test) <- 'activity'
-colnames(y.train) <- 'activity'
+colnames(y.test) <- 'activity.index'
+colnames(y.train) <- 'activity.index'
 
 ### combine test and training data
 data.test <- cbind(y.test , x.test )
 data.train <- cbind(y.train , x.train)
 data <- rbind(data.test ,data.train)
 
+### step 2
 ### find only those rows that are mean or std
 ### note: need to grep for the string 'mean()' to avoid the string 'meanfreq'  
 data.meanstd <- grep("mean()|std()|activity" , colnames(data))
@@ -28,7 +30,8 @@ data.meanstd <- grep("mean()|std()|activity" , colnames(data))
 data.filterd <- data[,data.meanstd]
 
 
-
-### merge the activity  labels
-#data.activity <- merge( data , activity.labels , by.x = "activity"  , by.y = "V1" )
-
+### step 3
+### merge the activity labels
+colnames(activity.labels) <- cbind('activity.index' , 'activity')
+data.activity <- merge( activity.labels , data , by.x = "activity.index"  , by.y = "activity.index" )
+data.tidy <- data.activity[,2:length(names(data.activity))]
