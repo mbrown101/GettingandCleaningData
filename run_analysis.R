@@ -39,8 +39,8 @@ data.filterd <- data[,data.meanstd]
 ### merge the activity labels
 colnames(activity.labels) <- cbind('activity.index' , 'activity')
 data.activity <- merge( activity.labels , data , by.x = "activity.index"  , by.y = "activity.index" )
-tidy.cols <- grep([^activity.index] , colnames(data.activity))
-data.tidy <- data.activity[,tidy.cols]
+#tidy.cols <- grep(^'activity.index' , colnames(data.activity))
+data.tidy <- data.activity[,2:length(colnames(data.activity))]
 
 ### Step 4 rename variables
 data.tidy.colnames <- colnames(data.tidy)
