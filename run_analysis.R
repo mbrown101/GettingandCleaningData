@@ -62,4 +62,4 @@ colnames(data.tidy) <- data.tidy.colnames
 #aggdata <-aggregate(data.tidy, by=list('subject','activity'), FUN=mean, na.rm=TRUE)
 cols<- length(colnames(data.tidy))
 aggdata <-aggregate(data.tidy[,3:cols], by=list(data.tidy[,1],data.tidy[,2]), FUN=mean, na.rm=TRUE)
-write.csv(aggdata3, file = "tidydata.csv")
+write.csv(aggdata, file = "tidydata.csv")
