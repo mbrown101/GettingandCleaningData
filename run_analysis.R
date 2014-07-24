@@ -61,6 +61,7 @@ colnames(data.tidy) <- data.tidy.colnames
 ### step 5 create xtab with an average of each variable for each activity for each subject
 #aggdata <-aggregate(data.tidy, by=list('subject','activity'), FUN=mean, na.rm=TRUE)
 cols<- length(colnames(data.tidy))
-aggdata <-aggregate(data.tidy, by=list(data.tidy[,1],data.tidy[,2]), FUN=mean, na.rm=TRUE)
-aggdata2 <-aggregate(data.tidy[,3:81], by=list(data.tidy[,1],data.tidy[,2]), FUN=mean, na.rm=TRUE)
+#aggdata <-aggregate(data.tidy, by=list(data.tidy[,1],data.tidy[,2]), FUN=mean, na.rm=TRUE)
+#aggdata2 <-aggregate(data.tidy[,3:81], by=list(data.tidy[,1],data.tidy[,2]), FUN=mean, na.rm=TRUE)
 aggdata3 <-aggregate(data.tidy[,3:cols], by=list(data.tidy[,1],data.tidy[,2]), FUN=mean, na.rm=TRUE)
+write.csv(aggdata3, file = "tidydata.csv")
