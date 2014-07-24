@@ -11,10 +11,10 @@ Initial condition: all files from the data source zip file (noted above) are UNZ
 Tidy Dataset Output:
 
 col     names
-1	      activity
-2	      subject
-3	TimeDomainBodyAccelerationMeanValueXaxis
-4	TimeDomainBodyAccelerationMeanValueYaxis
+- 1	      activity
+- 2	      subject
+- 3	TimeDomainBodyAccelerationMeanValueXaxis
+- 4	TimeDomainBodyAccelerationMeanValueYaxis
 5	TimeDomainBodyAccelerationMeanValueZaxis
 6	TimeDomainBodyAccelerationStandardDeviationXaxis
 7	TimeDomainBodyAccelerationStandardDeviationYaxis
