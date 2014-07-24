@@ -1,7 +1,6 @@
 ### run_analysis.R is the R script used to construct the tidy data set.  
 ### This code requires the samsung data to be unzipped in the working directory
 
-
 ### Read in data
 x.test <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt')
 y.test <- read.table('~/R/UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt')
@@ -59,10 +58,6 @@ data.tidy.colnames <- gsub("()", '' , data.tidy.colnames , fixed=TRUE)
 
 colnames(data.tidy) <- data.tidy.colnames
 
-
 ### step 5 create xtab with an average of each variable for each activity for each subject
-require(stats)
-x <- as.factor(colnames(data.tidy))
-y <- as.factor(activity.labels[,2])
-#xt <- xtabs(mean(data.tidy[data.tidy[,x]==y , data.tidy[y,]==x]))
-tidy.components <- split(data.tidy ,data.tidy[,1:2] , drop = FALSE )
+#aggdata <-aggregate(data.tidy, by=list('subject','activity'), FUN=mean, na.rm=TRUE)
+aggdata <-aggregate(data.tidy, by=list(data.tidy[,1],data.tidy[,2]), FUN=mean, na.rm=TRUE)
