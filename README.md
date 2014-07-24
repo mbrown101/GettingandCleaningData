@@ -10,6 +10,12 @@ The purpose of this project is to demonstrate the ability to collect, work with,
      - CodeBook.md which is a code book describing variables, data, and transformations to clean the data
      - README.md which explains how all of the scripts work and how they are connected.  
 
+listing all the related files, 
+instructions on how to use the script, 
+a general description of the raw data and it's source, 
+a description of what the script will do
+
+
 One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description of how the data was obtained is here: 
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
