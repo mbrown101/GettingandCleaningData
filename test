@@ -1,184 +1,85 @@
 Tidy data outuput:
 
-row	|	activity	|	subject	|	TimeDomainBodyAccelerationMeanValueXaxis
--------------	|	-------------	|	-------------	|	-----------------------------------------------------------
-1	|	LAYING	|	1	|	0.221598244
-2	|	SITTING	|	1	|	0.261237565
-3	|	STANDING	|	1	|	0.278917629
-4	|	WALKING	|	1	|	0.277330759
-5	|	WALKING_DOWNSTAIRS	|	1	|	0.28918832
-6	|	WALKING_UPSTAIRS	|	1	|	0.25546169
-7	|	LAYING	|	2	|	0.281373404
-8	|	SITTING	|	2	|	0.277087352
-9	|	STANDING	|	2	|	0.277911472
-10	|	WALKING	|	2	|	0.276426586
-11	|	WALKING_DOWNSTAIRS	|	2	|	0.277615348
-12	|	WALKING_UPSTAIRS	|	2	|	0.24716479
-13	|	LAYING	|	3	|	0.275516853
-14	|	SITTING	|	3	|	0.257197599
-15	|	STANDING	|	3	|	0.280046513
-16	|	WALKING	|	3	|	0.275567462
-17	|	WALKING_DOWNSTAIRS	|	3	|	0.292423485
-18	|	WALKING_UPSTAIRS	|	3	|	0.260819873
-19	|	LAYING	|	4	|	0.263559215
-20	|	SITTING	|	4	|	0.27153828
-21	|	STANDING	|	4	|	0.280499746
-22	|	WALKING	|	4	|	0.278582015
-23	|	WALKING_DOWNSTAIRS	|	4	|	0.27996533
-24	|	WALKING_UPSTAIRS	|	4	|	0.270876697
-25	|	LAYING	|	5	|	0.278334326
-26	|	SITTING	|	5	|	0.27369414
-27	|	STANDING	|	5	|	0.282544391
-28	|	WALKING	|	5	|	0.277842346
-29	|	WALKING_DOWNSTAIRS	|	5	|	0.293543927
-30	|	WALKING_UPSTAIRS	|	5	|	0.26845947
-31	|	LAYING	|	6	|	0.24865652
-32	|	SITTING	|	6	|	0.276778487
-33	|	STANDING	|	6	|	0.280346249
-34	|	WALKING	|	6	|	0.283658868
-35	|	WALKING_DOWNSTAIRS	|	6	|	0.277045258
-36	|	WALKING_UPSTAIRS	|	6	|	0.268229355
-37	|	LAYING	|	7	|	0.250176694
-38	|	SITTING	|	7	|	0.284674637
-39	|	STANDING	|	7	|	0.282723539
-40	|	WALKING	|	7	|	0.275592962
-41	|	WALKING_DOWNSTAIRS	|	7	|	0.28030708
-42	|	WALKING_UPSTAIRS	|	7	|	0.248706923
-43	|	LAYING	|	8	|	0.261254283
-44	|	SITTING	|	8	|	0.267491473
-45	|	STANDING	|	8	|	0.279620986
-46	|	WALKING	|	8	|	0.27468631
-47	|	WALKING_DOWNSTAIRS	|	8	|	0.283484089
-48	|	WALKING_UPSTAIRS	|	8	|	0.258880152
-49	|	LAYING	|	9	|	0.259195537
-50	|	SITTING	|	9	|	0.248326744
-51	|	STANDING	|	9	|	0.282310057
-52	|	WALKING	|	9	|	0.278502842
-53	|	WALKING_DOWNSTAIRS	|	9	|	0.295923445
-54	|	WALKING_UPSTAIRS	|	9	|	0.262436476
-55	|	LAYING	|	10	|	0.280230574
-56	|	SITTING	|	10	|	0.270612056
-57	|	STANDING	|	10	|	0.276650301
-58	|	WALKING	|	10	|	0.278574077
-59	|	WALKING_DOWNSTAIRS	|	10	|	0.290401594
-60	|	WALKING_UPSTAIRS	|	10	|	0.267121853
-61	|	LAYING	|	11	|	0.280592971
-62	|	SITTING	|	11	|	0.276590197
-63	|	STANDING	|	11	|	0.277715563
-64	|	WALKING	|	11	|	0.271821893
-65	|	WALKING_DOWNSTAIRS	|	11	|	0.291605632
-66	|	WALKING_UPSTAIRS	|	11	|	0.263775859
-67	|	LAYING	|	12	|	0.260113433
-68	|	SITTING	|	12	|	0.275007225
-69	|	STANDING	|	12	|	0.277405835
-70	|	WALKING	|	12	|	0.277128666
-71	|	WALKING_DOWNSTAIRS	|	12	|	0.281521097
-72	|	WALKING_UPSTAIRS	|	12	|	0.272970339
-73	|	LAYING	|	13	|	0.27671636
-74	|	SITTING	|	13	|	0.2743285
-75	|	STANDING	|	13	|	0.277758431
-76	|	WALKING	|	13	|	0.27588313
-77	|	WALKING_DOWNSTAIRS	|	13	|	0.294907553
-78	|	WALKING_UPSTAIRS	|	13	|	0.25820394
-79	|	LAYING	|	14	|	0.23327544
-80	|	SITTING	|	14	|	0.279990577
-81	|	STANDING	|	14	|	0.280545614
-82	|	WALKING	|	14	|	0.271959599
-83	|	WALKING_DOWNSTAIRS	|	14	|	0.293422116
-84	|	WALKING_UPSTAIRS	|	14	|	0.262421066
-85	|	LAYING	|	15	|	0.289475653
-86	|	SITTING	|	15	|	0.27290338
-87	|	STANDING	|	15	|	0.278915804
-88	|	WALKING	|	15	|	0.273899208
-89	|	WALKING_DOWNSTAIRS	|	15	|	0.280198851
-90	|	WALKING_UPSTAIRS	|	15	|	0.270187596
-91	|	LAYING	|	16	|	0.274227163
-92	|	SITTING	|	16	|	0.280768574
-93	|	STANDING	|	16	|	0.283497403
-94	|	WALKING	|	16	|	0.276023565
-95	|	WALKING_DOWNSTAIRS	|	16	|	0.295586802
-96	|	WALKING_UPSTAIRS	|	16	|	0.255986103
-97	|	LAYING	|	17	|	0.269780086
-98	|	SITTING	|	17	|	0.27735702
-99	|	STANDING	|	17	|	0.277942503
-100	|	WALKING	|	17	|	0.272341855
-101	|	WALKING_DOWNSTAIRS	|	17	|	0.293918283
-102	|	WALKING_UPSTAIRS	|	17	|	0.252604769
-103	|	LAYING	|	18	|	0.274691577
-104	|	SITTING	|	18	|	0.277270019
-105	|	STANDING	|	18	|	0.278458806
-106	|	WALKING	|	18	|	0.273887759
-107	|	WALKING_DOWNSTAIRS	|	18	|	0.288439469
-108	|	WALKING_UPSTAIRS	|	18	|	0.265401202
-109	|	LAYING	|	19	|	0.272653733
-110	|	SITTING	|	19	|	0.273830316
-111	|	STANDING	|	19	|	0.27817226
-112	|	WALKING	|	19	|	0.273931172
-113	|	WALKING_DOWNSTAIRS	|	19	|	0.262688054
-114	|	WALKING_UPSTAIRS	|	19	|	0.242118809
-115	|	LAYING	|	20	|	0.239507882
-116	|	SITTING	|	20	|	0.278045439
-117	|	STANDING	|	20	|	0.278076905
-118	|	WALKING	|	20	|	0.272589336
-119	|	WALKING_DOWNSTAIRS	|	20	|	0.296144421
-120	|	WALKING_UPSTAIRS	|	20	|	0.252098317
-121	|	LAYING	|	21	|	0.271325472
-122	|	SITTING	|	21	|	0.277539617
-123	|	STANDING	|	21	|	0.276952243
-124	|	WALKING	|	21	|	0.279183527
-125	|	WALKING_DOWNSTAIRS	|	21	|	0.30146102
-126	|	WALKING_UPSTAIRS	|	21	|	0.265194545
-127	|	LAYING	|	22	|	0.279959721
-128	|	SITTING	|	22	|	0.273583823
-129	|	STANDING	|	22	|	0.279053862
-130	|	WALKING	|	22	|	0.27886459
-131	|	WALKING_DOWNSTAIRS	|	22	|	0.284458964
-132	|	WALKING_UPSTAIRS	|	22	|	0.248391535
-133	|	LAYING	|	23	|	0.274038008
-134	|	SITTING	|	23	|	0.273351252
-135	|	STANDING	|	23	|	0.277899323
-136	|	WALKING	|	23	|	0.273211884
-137	|	WALKING_DOWNSTAIRS	|	23	|	0.289897411
-138	|	WALKING_UPSTAIRS	|	23	|	0.249995171
-139	|	LAYING	|	24	|	0.272850495
-140	|	SITTING	|	24	|	0.27347569
-141	|	STANDING	|	24	|	0.280348884
-142	|	WALKING	|	24	|	0.276980816
-143	|	WALKING_DOWNSTAIRS	|	24	|	0.288631209
-144	|	WALKING_UPSTAIRS	|	24	|	0.269881107
-145	|	LAYING	|	25	|	0.250791829
-146	|	SITTING	|	25	|	0.278541482
-147	|	STANDING	|	25	|	0.278013702
-148	|	WALKING	|	25	|	0.278992759
-149	|	WALKING_DOWNSTAIRS	|	25	|	0.291329666
-150	|	WALKING_UPSTAIRS	|	25	|	0.277995411
-151	|	LAYING	|	26	|	0.271645865
-152	|	SITTING	|	26	|	0.25824353
-153	|	STANDING	|	26	|	0.281127035
-154	|	WALKING	|	26	|	0.279264444
-155	|	WALKING_DOWNSTAIRS	|	26	|	0.279284583
-156	|	WALKING_UPSTAIRS	|	26	|	0.272691395
-157	|	LAYING	|	27	|	0.274102492
-158	|	SITTING	|	27	|	0.273941303
-159	|	STANDING	|	27	|	0.279566922
-160	|	WALKING	|	27	|	0.276849485
-161	|	WALKING_DOWNSTAIRS	|	27	|	0.297544188
-162	|	WALKING_UPSTAIRS	|	27	|	0.265770254
-163	|	LAYING	|	28	|	0.275913483
-164	|	SITTING	|	28	|	0.276977629
-165	|	STANDING	|	28	|	0.277795069
-166	|	WALKING	|	28	|	0.281228224
-167	|	WALKING_DOWNSTAIRS	|	28	|	0.293642077
-168	|	WALKING_UPSTAIRS	|	28	|	0.262005842
-169	|	LAYING	|	29	|	0.287295197
-170	|	SITTING	|	29	|	0.277179978
-171	|	STANDING	|	29	|	0.277965066
-172	|	WALKING	|	29	|	0.271999917
-173	|	WALKING_DOWNSTAIRS	|	29	|	0.293140441
-174	|	WALKING_UPSTAIRS	|	29	|	0.265423067
-175	|	LAYING	|	30	|	0.281033901
-176	|	SITTING	|	30	|	0.268336081
-177	|	STANDING	|	30	|	0.277112699
-178	|	WALKING	|	30	|	0.276406758
-179	|	WALKING_DOWNSTAIRS	|	30	|	0.283190647
-180	|	WALKING_UPSTAIRS	|	30	|	0.271415642
+Column	|	Column Title	|	Type	|	max	|	min
+----------	|	-------------------------------------------------------------------------	|	--------	|	--------	|	--------
+1	|	activity	|	text	|	WALKING	|	LAYING
+2	|	subject	|	int	|	30	|	1
+3	|	TimeDomainBodyAccelerationMeanValueXaxis	|	float	|	0.30146102	|	0.221598244
+4	|	TimeDomainBodyAccelerationMeanValueYaxis	|	float	|	-0.001308288	|	-0.040513953
+5	|	TimeDomainBodyAccelerationMeanValueZaxis	|	float	|	-0.075378469	|	-0.1525139
+6	|	TimeDomainBodyAccelerationStandardDeviationXaxis	|	float	|	0.626917071	|	-0.996068635
+7	|	TimeDomainBodyAccelerationStandardDeviationYaxis	|	float	|	0.616937015	|	-0.990240947
+8	|	TimeDomainBodyAccelerationStandardDeviationZaxis	|	float	|	0.609017879	|	-0.987658662
+9	|	TimeDomainGravityAccelerationMeanValueXaxis	|	float	|	0.974508732	|	-0.680043155
+10	|	TimeDomainGravityAccelerationMeanValueYaxis	|	float	|	0.956593814	|	-0.479894843
+11	|	TimeDomainGravityAccelerationMeanValueZaxis	|	float	|	0.957873042	|	-0.49508872
+12	|	TimeDomainGravityAccelerationStandardDeviationXaxis	|	float	|	-0.829554948	|	-0.996764227
+13	|	TimeDomainGravityAccelerationStandardDeviationYaxis	|	float	|	-0.643578361	|	-0.994247649
+14	|	TimeDomainGravityAccelerationStandardDeviationZaxis	|	float	|	-0.610161166	|	-0.99095725
+15	|	TimeDomainBodyAccelerationJerkMeanValueXaxis	|	float	|	0.130193044	|	0.042688099
+16	|	TimeDomainBodyAccelerationJerkMeanValueYaxis	|	float	|	0.056818586	|	-0.038687211
+17	|	TimeDomainBodyAccelerationJerkMeanValueZaxis	|	float	|	0.038053359	|	-0.067458392
+18	|	TimeDomainBodyAccelerationJerkStandardDeviationXaxis	|	float	|	0.544273037	|	-0.994604542
+19	|	TimeDomainBodyAccelerationJerkStandardDeviationYaxis	|	float	|	0.355306717	|	-0.989513566
+20	|	TimeDomainBodyAccelerationJerkStandardDeviationZaxis	|	float	|	0.031015708	|	-0.993288313
+21	|	TimeDomainBodyGyroMeanValueXaxis	|	float	|	0.192704476	|	-0.205775427
+22	|	TimeDomainBodyGyroMeanValueYaxis	|	float	|	0.027470756	|	-0.204205356
+23	|	TimeDomainBodyGyroMeanValueZaxis	|	float	|	0.179102058	|	-0.072454603
+24	|	TimeDomainBodyGyroStandardDeviationXaxis	|	float	|	0.267657219	|	-0.994276591
+25	|	TimeDomainBodyGyroStandardDeviationYaxis	|	float	|	0.476518714	|	-0.994210472
+26	|	TimeDomainBodyGyroStandardDeviationZaxis	|	float	|	0.564875818	|	-0.985538363
+27	|	TimeDomainBodyGyroJerkMeanValueXaxis	|	float	|	-0.022091627	|	-0.157212539
+28	|	TimeDomainBodyGyroJerkMeanValueYaxis	|	float	|	-0.013202277	|	-0.076808992
+29	|	TimeDomainBodyGyroJerkMeanValueZaxis	|	float	|	-0.006940664	|	-0.092499853
+30	|	TimeDomainBodyGyroJerkStandardDeviationXaxis	|	float	|	0.17914865	|	-0.996542541
+31	|	TimeDomainBodyGyroJerkStandardDeviationYaxis	|	float	|	0.295945926	|	-0.997081576
+32	|	TimeDomainBodyGyroJerkStandardDeviationZaxis	|	float	|	0.193206499	|	-0.995380795
+33	|	TimeDomainBodyAccelerationMagMeanValue	|	float	|	0.644604325	|	-0.986493197
+34	|	TimeDomainBodyAccelerationMagStandardDeviation	|	float	|	0.428405923	|	-0.986464543
+35	|	TimeDomainGravityAccelerationMagMeanValue	|	float	|	0.644604325	|	-0.986493197
+36	|	TimeDomainGravityAccelerationMagStandardDeviation	|	float	|	0.428405923	|	-0.986464543
+37	|	TimeDomainBodyAccelerationJerkMagMeanValue	|	float	|	0.434490401	|	-0.992814715
+38	|	TimeDomainBodyAccelerationJerkMagStandardDeviation	|	float	|	0.450612066	|	-0.994646917
+39	|	TimeDomainBodyGyroMagMeanValue	|	float	|	0.418004609	|	-0.980740847
+40	|	TimeDomainBodyGyroMagStandardDeviation	|	float	|	0.29997598	|	-0.981372676
+41	|	TimeDomainBodyGyroJerkMagMeanValue	|	float	|	0.087581662	|	-0.997322527
+42	|	TimeDomainBodyGyroJerkMagStandardDeviation	|	float	|	0.250173204	|	-0.997666072
+43	|	FrequencyDomainAccelerationMeanValueXaxis	|	float	|	0.537012022	|	-0.995249933
+44	|	FrequencyDomainAccelerationMeanValueYaxis	|	float	|	0.524187687	|	-0.989034304
+45	|	FrequencyDomainAccelerationMeanValueZaxis	|	float	|	0.280735952	|	-0.989473927
+46	|	FrequencyDomainAccelerationStandardDeviationXaxis	|	float	|	0.658506543	|	-0.99660457
+47	|	FrequencyDomainAccelerationStandardDeviationYaxis	|	float	|	0.560191344	|	-0.990680395
+48	|	FrequencyDomainAccelerationStandardDeviationZaxis	|	float	|	0.687124164	|	-0.987224804
+49	|	FrequencyDomainAccelerationMeanValueFrequencyXaxis	|	float	|	0.159123629	|	-0.635913046
+50	|	FrequencyDomainAccelerationMeanValueFrequencyYaxis	|	float	|	0.466528232	|	-0.379518455
+51	|	FrequencyDomainAccelerationMeanValueFrequencyZaxis	|	float	|	0.402532553	|	-0.520114794
+52	|	FrequencyDomainAccelerationJerkMeanValueXaxis	|	float	|	0.474317256	|	-0.994630797
+53	|	FrequencyDomainAccelerationJerkMeanValueYaxis	|	float	|	0.276716853	|	-0.989398824
+54	|	FrequencyDomainAccelerationJerkMeanValueZaxis	|	float	|	0.157775692	|	-0.992018448
+55	|	FrequencyDomainAccelerationJerkStandardDeviationXaxis	|	float	|	0.476803887	|	-0.995073759
+56	|	FrequencyDomainAccelerationJerkStandardDeviationYaxis	|	float	|	0.349771285	|	-0.990468083
+57	|	FrequencyDomainAccelerationJerkStandardDeviationZaxis	|	float	|	-0.006236475	|	-0.99310776
+58	|	FrequencyDomainAccelerationJerkMeanValueFrequencyXaxis	|	float	|	0.331449281	|	-0.576044002
+59	|	FrequencyDomainAccelerationJerkMeanValueFrequencyYaxis	|	float	|	0.195677336	|	-0.601971415
+60	|	FrequencyDomainAccelerationJerkMeanValueFrequencyZaxis	|	float	|	0.230107946	|	-0.627555474
+61	|	FrequencyDomainGyroMeanValueXaxis	|	float	|	0.474962448	|	-0.993122609
+62	|	FrequencyDomainGyroMeanValueYaxis	|	float	|	0.32881701	|	-0.994025488
+63	|	FrequencyDomainGyroMeanValueZaxis	|	float	|	0.49241438	|	-0.985957788
+64	|	FrequencyDomainGyroStandardDeviationXaxis	|	float	|	0.196613287	|	-0.994652185
+65	|	FrequencyDomainGyroStandardDeviationYaxis	|	float	|	0.646233637	|	-0.994353087
+66	|	FrequencyDomainGyroStandardDeviationZaxis	|	float	|	0.522454216	|	-0.986725275
+67	|	FrequencyDomainGyroMeanValueFrequencyXaxis	|	float	|	0.249209412	|	-0.395770151
+68	|	FrequencyDomainGyroMeanValueFrequencyYaxis	|	float	|	0.273141323	|	-0.666814815
+69	|	FrequencyDomainGyroMeanValueFrequencyZaxis	|	float	|	0.377074097	|	-0.507490867
+70	|	FrequencyDomainAccelerationMagMeanValue	|	float	|	0.586637551	|	-0.986800645
+71	|	FrequencyDomainAccelerationMagStandardDeviation	|	float	|	0.178684581	|	-0.987648484
+72	|	FrequencyDomainAccelerationMagMeanValueFrequency	|	float	|	0.435846932	|	-0.31233803
+73	|	FrequencyDomainBodyAccelerationJerkMagMeanValue	|	float	|	0.538404846	|	-0.993998276
+74	|	FrequencyDomainBodyAccelerationJerkMagStandardDeviation	|	float	|	0.316346415	|	-0.994366668
+75	|	FrequencyDomainBodyAccelerationJerkMagMeanValueFrequency	|	float	|	0.4880885	|	-0.125210389
+76	|	FrequencyDomainBodyGyroMagMeanValue	|	float	|	0.203979765	|	-0.986535242
+77	|	FrequencyDomainBodyGyroMagStandardDeviation	|	float	|	0.236659662	|	-0.981468842
+78	|	FrequencyDomainBodyGyroMagMeanValueFrequency	|	float	|	0.409521612	|	-0.456638671
+79	|	FrequencyDomainBodyGyroJerkMagMeanValue	|	float	|	0.146618569	|	-0.997617389
+80	|	FrequencyDomainBodyGyroJerkMagStandardDeviation	|	float	|	0.287834616	|	-0.997585231
+81	|	FrequencyDomainBodyGyroJerkMagMeanValueFrequency	|	float	|	0.42630168	|	-0.182923597
