@@ -11,7 +11,7 @@ Initial condition: all files from the data source zip file (noted above) are UNZ
 Tidy Dataset Output:
 
 Column	Type	  max	          min	          Column Title
-- 1	    text			                          activity
+- 1 text			                          activity
 - 2	    int	     1		        30            subject
 - 3	    float	   0.30146102	   0.221598244	TimeDomainBodyAccelerationMeanValueXaxis
 - 4	    float	  -0.001308288	-0.040513953	TimeDomainBodyAccelerationMeanValueYaxis
