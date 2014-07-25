@@ -9,7 +9,7 @@ The data can be accessed from: https://d396qusza40orc.cloudfront.net/getdata%2Fp
 ### Description of run_analysis.R 
 Initial condition: all files from the data source zip file (noted above) are UNZIPPED in the R working directory
 
-Tidy Dataset Output:
+Tidy Dataset Output Summary with Min and Max values:
 
 Column	|	Column Title	|	Type	|	max	|	min
 ----------	|	-------------------------------------------------------------------------	|	--------	|	--------	|	--------
