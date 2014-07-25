@@ -6,14 +6,15 @@
 3. The directory structure was left in tact
 
 ### Description of run_analysis.R 
-Initial condition: all files from the data source zip file (noted above) are UNZIPPED in the R working directory
-Programatic Steps:
++ Initial condition: all files from the data source zip file (noted above) are UNZIPPED in the R working directory
 
-+ Merge each training and test data set into one data set
-+ Extract  measurements on the mean and standard deviation for each measurement
-+ Add descriptive activities to data set
-+ Label data descriptively
-+ Create second, independent tidy data set weith the average of each variable for each activity and each subject
++ Programatic Steps:
+
+++ Merge each training and test data set into one data set
+++ Extract  measurements on the mean and standard deviation for each measurement
+++ Add descriptive activities to data set
+++ Label data descriptively
+++ Create second, independent tidy data set weith the average of each variable for each activity and each subject
 
 
 ###Tidy Dataset Output Summary with Min and Max values:
