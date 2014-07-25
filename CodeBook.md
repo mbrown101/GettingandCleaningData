@@ -11,16 +11,16 @@ Initial condition: all files from the data source zip file (noted above) are UNZ
 
 Tidy Dataset Output:
 
-Column	Column Title	Type	max	min
-- 1	activity	text		
-- 2	subject	int		
-- 3	TimeDomainBodyAccelerationMeanValueXaxis            float	0.30146102	0.221598244
-- 4	TimeDomainBodyAccelerationMeanValueYaxis	        float	-0.001308288	-0.040513953
-- 5	TimeDomainBodyAccelerationMeanValueZaxis	        float	-0.075378469	-0.1525139
+Col	Label                                	    Type	max	            min
+- 1	activity	                                text		
+- 2	subject	                                    int		
+- 3	TimeDomainBodyAccelerationMeanValueXaxis	float	0.30146102	     0.221598244
+- 4	TimeDomainBodyAccelerationMeanValueYaxis	float	-0.001308288	-0.040513953
+- 5	TimeDomainBodyAccelerationMeanValueZaxis	float	-0.075378469	-0.1525139
 - 6	TimeDomainBodyAccelerationStandardDeviationXaxis	float	0.626917071	-0.996068635
 - 7	TimeDomainBodyAccelerationStandardDeviationYaxis	float	0.616937015	-0.990240947
 - 8	TimeDomainBodyAccelerationStandardDeviationZaxis	float	0.609017879	-0.987658662
-- 9	TimeDomainGravityAccelerationMeanValueXaxis	        float	0.974508732	-0.680043155
+- 9	TimeDomainGravityAccelerationMeanValueXaxis	float	0.974508732	-0.680043155
 - 10	TimeDomainGravityAccelerationMeanValueYaxis	float	0.956593814	-0.479894843
 - 11	TimeDomainGravityAccelerationMeanValueZaxis	float	0.957873042	-0.49508872
 - 12	TimeDomainGravityAccelerationStandardDeviationXaxis	float	-0.829554948	-0.996764227
