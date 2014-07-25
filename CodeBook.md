@@ -10,14 +10,14 @@ Initial condition: all files from the data source zip file (noted above) are UNZ
 
 Tidy Dataset Output:
 
-Col Type	max	min	Column Title
--1 text			activity
--2  int			subject
--3  float	0.30146102	0.221598244	TimeDomainBodyAccelerationMeanValueXaxis
--4  float	-0.001308288	-0.040513953	TimeDomainBodyAccelerationMeanValueYaxis
--5  float	-0.075378469	-0.1525139	TimeDomainBodyAccelerationMeanValueZaxis
+Column	Type	max	min	Column Title
+-1	text			activity
+-2	int			subject
+-3	float	0.30146102	0.221598244	TimeDomainBodyAccelerationMeanValueXaxis
+-4	float	-0.001308288	-0.040513953	TimeDomainBodyAccelerationMeanValueYaxis
+-5	float	-0.075378469	-0.1525139	TimeDomainBodyAccelerationMeanValueZaxis
 -6	float	0.626917071	-0.996068635	TimeDomainBodyAccelerationStandardDeviationXaxis
--7  float	0.616937015	-0.990240947	TimeDomainBodyAccelerationStandardDeviationYaxis
+-7	float	0.616937015	-0.990240947	TimeDomainBodyAccelerationStandardDeviationYaxis
 -8	float	0.609017879	-0.987658662	TimeDomainBodyAccelerationStandardDeviationZaxis
 -9	float	0.974508732	-0.680043155	TimeDomainGravityAccelerationMeanValueXaxis
 -10	float	0.956593814	-0.479894843	TimeDomainGravityAccelerationMeanValueYaxis
@@ -92,6 +92,7 @@ Col Type	max	min	Column Title
 -79	float	0.146618569	-0.997617389	FrequencyDomainBodyGyroJerkMagMeanValue
 -80	float	0.287834616	-0.997585231	FrequencyDomainBodyGyroJerkMagStandardDeviation
 -81	float	0.42630168	-0.182923597	FrequencyDomainBodyGyroJerkMagMeanValueFrequency
+
 
 
 Programatic Steps:
