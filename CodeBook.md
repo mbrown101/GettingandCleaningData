@@ -1,15 +1,14 @@
 ##  Code book for Getting and Cleaning Course Project
 
-### Data:
-The data for this project is collected from the accelerometers from the Samsung Galaxy S smartphone. 
-A full description is available at: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
-
-The data can be accessed from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+### Data Sourcea and Transport:
+1. The raw data for this project was downloaded from  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+2. Data was unzipped into the working directory.  
+3. The directory structure was left in tact
 
 ### Description of run_analysis.R 
 Initial condition: all files from the data source zip file (noted above) are UNZIPPED in the R working directory
 
-Tidy Dataset Output Summary with Min and Max values:
+###Tidy Dataset Output Summary with Min and Max values:
 
 Column	|	Column Title	|	Type	|	max	|	min
 ----------	|	-------------------------------------------------------------------------	|	--------	|	--------	|	--------
