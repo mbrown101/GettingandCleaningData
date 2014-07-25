@@ -22,11 +22,13 @@ Programatic Steps:
 		~/R/UCI HAR Dataset/UCI HAR Dataset/activity_labels.txt;
   
 - Assign column names:
+- 
 		Set colnames() of the x_test and x_train using the features.txt
 		Set colnames() of the subject_train.txt and subject_test.txt R objects to 'subject'
 		Set colnames() of the x_test and x_train R objects to 'act.index'
 
-- Merge each training and test data set into one data set
+- Merge each training and test data set into one data set:
+
 		cbind() the test objects
 		cbind() the train objects
 		rbind() the test and training objects to form entire data set
