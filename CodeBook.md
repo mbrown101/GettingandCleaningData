@@ -7,6 +7,14 @@
 
 ### Description of run_analysis.R 
 Initial condition: all files from the data source zip file (noted above) are UNZIPPED in the R working directory
+Programatic Steps:
+
++ Merge each training and test data set into one data set
++ Extract  measurements on the mean and standard deviation for each measurement
++ Add descriptive activities to data set
++ Label data descriptively
++ Create second, independent tidy data set weith the average of each variable for each activity and each subject
+
 
 ###Tidy Dataset Output Summary with Min and Max values:
 
@@ -94,11 +102,3 @@ Column	|	Column Title	|	Type	|	max	|	min
 80	|	FrequencyDomainBodyGyroJerkMagStandardDeviation	|	float	|	0.287834616	|	-0.997585231
 81	|	FrequencyDomainBodyGyroJerkMagMeanValueFrequency	|	float	|	0.42630168	|	-0.182923597
 
-
-Programatic Steps:
-
-+ Merge each training and test data set into one data set
-+ Extract  measurements on the mean and standard deviation for each measurement
-+ Add descriptive activities to data set
-+ Label data descriptively
-+ Create second, independent tidy data set weith the average of each variable for each activity and each subject
