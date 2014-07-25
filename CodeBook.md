@@ -11,7 +11,7 @@ Initial condition:
 
 Programatic Steps:
 - load each of the following files into an R object:
-   '''
+   '''python
     ~/R/UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt
     ~/R/UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt
     ~/R/UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt
