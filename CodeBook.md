@@ -12,14 +12,14 @@ Initial condition:
 Programatic Steps:
 - load each of the following files into an R object:
   
-    ~/R/UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt;
-    ~/R/UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt;
-    ~/R/UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt;
-    ~/R/UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt;
-    ~/R/UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt;
-    ~/R/UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt;
-    ~/R/UCI HAR Dataset/UCI HAR Dataset/features.txt;
-    ~/R/UCI HAR Dataset/UCI HAR Dataset/activity_labels.txt;
+		~/R/UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt
+		~/R/UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt
+		~/R/UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt
+		~/R/UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt
+		~/R/UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt
+		~/R/UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt
+		~/R/UCI HAR Dataset/UCI HAR Dataset/features.txt
+		~/R/UCI HAR Dataset/UCI HAR Dataset/activity_labels.txt;
   
 
 + Merge each training and test data set into one data set
