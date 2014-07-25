@@ -1,7 +1,7 @@
 ##  Code book for Getting and Cleaning Course Project
 
 ### Data Source and Transport:
-1. The raw data for this project was downloaded from  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+1. The raw data for this project was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 2. Data was unzipped into the working directory.  
 3. The directory structure was left in tact
 
