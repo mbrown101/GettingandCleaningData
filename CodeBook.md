@@ -13,9 +13,9 @@ Tidy Dataset Output:
 
 Column	Column Title	Type	max	min
 - 1	activity	text		
-2	subject	int		
-3	TimeDomainBodyAccelerationMeanValueXaxis	float	0.30146102	0.221598244
-4	TimeDomainBodyAccelerationMeanValueYaxis	float	-0.001308288	-0.040513953
+- 2	subject	int		
+- 3	TimeDomainBodyAccelerationMeanValueXaxis	float	0.30146102	0.221598244
+-4	TimeDomainBodyAccelerationMeanValueYaxis	float	-0.001308288	-0.040513953
 5	TimeDomainBodyAccelerationMeanValueZaxis	float	-0.075378469	-0.1525139
 6	TimeDomainBodyAccelerationStandardDeviationXaxis	float	0.626917071	-0.996068635
 7	TimeDomainBodyAccelerationStandardDeviationYaxis	float	0.616937015	-0.990240947
