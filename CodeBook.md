@@ -35,7 +35,6 @@ Step 1:
 		rbind() the test and training objects to form entire data set
 
 Step 2:
-		
 - Select columns with data describing standard deviation and mean:
 
 		list column names with colnames()
@@ -69,7 +68,6 @@ fBody | FrequencyDomain
 
 
 Step 4:
- 		
 - Add activity noun manes to data:
 
 		Merge activity names into the mean() and std() data
@@ -77,7 +75,6 @@ Step 4:
 
 
 Step 5:
-
 - Create second, independent tidy data set with the average of each variable for each activity and each subject:
 
 		Use the aggregate() function to aggregate based on subject and activity using the mean function
