@@ -59,7 +59,7 @@ Acc | Acceleration
 -std() | StandardDeviation 
 Freq() | Frequency
 ()-X | Xaxis  
--Y | Yaxis) 
+-Y | Yaxis 
 -Z | Zaxis 
 tBody | TimeDomainBody  
 tGravity | TimeDomainGravity
