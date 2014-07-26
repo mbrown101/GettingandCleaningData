@@ -5,8 +5,9 @@
 2. Data was unzipped into the working directory.  
 3. The directory structure was left in tact
 
-### Description of run_analysis.R 
-Initial condition:
+### Description of run_analysis.R
+
+Step 0: 
 - All files from the data source are UNZIPPED in the R working directory
 
 Step 1:
