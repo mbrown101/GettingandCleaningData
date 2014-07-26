@@ -7,11 +7,9 @@
 
 ### Description of run_analysis.R
 
-Step 0: 
-- All files from the data source are UNZIPPED in the R working directory
+Step 0: All files from the data source are UNZIPPED in the R working directory
 
-Step 1:
-- Load each of the following files into an R object:
+Step 1: Load each of the following files into an R object:
   
 		~/R/UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt
 		~/R/UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt
@@ -22,21 +20,20 @@ Step 1:
 		~/R/UCI HAR Dataset/UCI HAR Dataset/features.txt
 		~/R/UCI HAR Dataset/UCI HAR Dataset/activity_labels.txt;
   
-- Assign column names:
+	Assign column names:
 
 		Set colnames() of the x_test and x_train using the features.txt
 		Set colnames() of the subject_train.txt and subject_test.txt R objects to 'subject'
 		Set colnames() of the x_test and x_train R objects to 'act.index'
 
 
-- Merge each training and test data set into one data set:
+	Merge each training and test data set into one data set:
 
 		cbind() the test objects
 		cbind() the train objects
 		rbind() the test and training objects to form entire data set
 
-Step 2:
-- Select columns with data describing standard deviation and mean:
+Step 2: Select columns with data describing standard deviation and mean:
 
 		list column names with colnames()
 		From list of all column names, form new set of column names by greping for columns with mean() or std()
@@ -45,8 +42,7 @@ Step 2:
 
 
 
-Step 3:
-- Label data descriptively:
+Step 3: Label data descriptively:
 
 		Change column labels by grep() with the below substitusions
 		The substitutions remove symbols and expand abbreviations 
@@ -68,15 +64,13 @@ fBody | FrequencyDomain
 () | '' 
 
 
-Step 4:
-- Add activity noun manes to data:
+Step 4: Add activity noun manes to data:
 
 		Merge activity names into the mean() and std() data
 		remove the activity index since the activity name is now part of the data
 
 
-Step 5:
-- Create second, independent tidy data set with the average of each variable for each activity and each subject:
+Step 5: Create second, independent tidy data set with the average of each variable for each activity and each subject:
 
 		Use the aggregate() function to aggregate based on subject and activity using the mean function
 		
