@@ -49,19 +49,19 @@ Programatic Steps:
 - Label data descriptively:
 
 		Change column labels by grep() with the following substitusions:
-			search term | Replacement
-			------------| ----------
-			Acc |Acceleration    
-			-mean() | MeanValue   
-			-std() | StandardDeviation 
-			Freq() | Frequency
-			()-X | Xaxis  
-			-Y | Yaxis) 
-			-Z | Zaxis 
-			tBody | TimeDomainBody  
-			tGravity', 'TimeDomainGravity
-			fBody | FrequencyDomain
-			"()" | '' 
+search term | Replacement
+------------| ----------
+Acc | Acceleration    
+-mean() | MeanValue   
+-std() | StandardDeviation 
+Freq() | Frequency
+()-X | Xaxis  
+-Y | Yaxis) 
+-Z | Zaxis 
+tBody | TimeDomainBody  
+tGravity | TimeDomainGravity
+fBody | FrequencyDomain
+() | '' 
 
 - Create second, independent tidy data set weith the average of each variable for each activity and each subject
 
