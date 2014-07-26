@@ -40,9 +40,29 @@ Programatic Steps:
 		Also grep() for subject and activity index
 		Form new R object based on list of columns containing only  mean() | std() | subject | activity index
  		
-- Extract  measurements on the mean and standard deviation for each measurement
-- Add descriptive activities to data set
-- Label data descriptively
+- Add activity noun manes to data:
+
+		Merge activity names into the mean() and std() data
+		remove the activity index since the activity name is now part of the data
+
+
+- Label data descriptively:
+
+		Change column labels by grep() with the following substitusions:
+			search term | Replacement
+			------------| ----------
+			Acc |Acceleration    
+			-mean() | MeanValue   
+			-std() | StandardDeviation 
+			Freq() | Frequency
+			()-X | Xaxis  
+			-Y | Yaxis) 
+			-Z | Zaxis 
+			tBody | TimeDomainBody  
+			tGravity', 'TimeDomainGravity
+			fBody | FrequencyDomain
+			"()" | '' 
+
 - Create second, independent tidy data set weith the average of each variable for each activity and each subject
 
 
