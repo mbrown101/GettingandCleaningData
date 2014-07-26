@@ -48,7 +48,10 @@ Programatic Steps:
 
 - Label data descriptively:
 
-		Change column labels by grep() with the following substitusions:
+		Change column labels by grep() with the below substitusions
+		The substitutions remove symbols and expand abbreviations 
+		Camel case is used to enhance human readability due to the length of the labels
+		
 search term | Replacement
 ------------| ----------
 Acc | Acceleration    
