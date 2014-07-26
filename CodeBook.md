@@ -71,9 +71,12 @@ fBody | FrequencyDomain
 		Use the aggregate() function to aggregate based on subject and activity using the mean function
 		
 		
+		
 
 
 ###Tidy Dataset Output Summary with Min and Max values:
+
+		Note the MIN and MAX values are the min() and max() of the AVERAGED data, not the raw data
 
 Column	|	Column Title	|	Type	|	max	|	min
 ----------	|	-------------------------------------------------------------------------	|	--------	|	--------	|	--------
