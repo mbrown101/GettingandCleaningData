@@ -35,13 +35,7 @@ data.meanstd <- grep("subject|mean()|std()|act.index" , colnames(data))
 data.filtered <- data[,data.meanstd]
 
 
-### step 3
-### merge the activity labels
-colnames(activity.labels) <- cbind('act.index' , 'activity')
-data.activity <- merge( activity.labels , data.filtered , by.x = "act.index"  , by.y = "act.index" )
-data.tidy <- data.activity[,2:length(colnames(data.activity))]
-
-### Step 4 rename variables
+### Step 3 rename variables
 data.tidy.colnames <- colnames(data.tidy)
 
 data.tidy.colnames <- gsub('Acc', 'Acceleration' , data.tidy.colnames)    
@@ -58,9 +52,15 @@ data.tidy.colnames <- gsub("()", '' , data.tidy.colnames , fixed=TRUE)
 
 colnames(data.tidy) <- data.tidy.colnames
 
+### step 4
+### merge the activity labels
+colnames(activity.labels) <- cbind('act.index' , 'activity')
+data.activity <- merge( activity.labels , data.filtered , by.x = "act.index"  , by.y = "act.index" )
+data.tidy <- data.activity[,2:length(colnames(data.activity))]
+
 ### step 5 create xtab with an average of each variable for each activity for each subject
 cols<- length(colnames(data.tidy))
 aggdata <-aggregate(data.tidy[,3:cols], by=list(data.tidy[,1] , data.tidy[,2] ), FUN=mean, na.rm=TRUE)
 colnames(aggdata)[1] <- 'activity' 
 colnames(aggdata)[2]<- 'subject'
-write.csv(aggdata, file = "tidydata.csv" , row.names = FALSE)
+write.csv(aggdata, file = "tidydata.csv" , row.names=FALSE)
