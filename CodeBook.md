@@ -66,7 +66,11 @@ tGravity | TimeDomainGravity
 fBody | FrequencyDomain
 () | '' 
 
-- Create second, independent tidy data set weith the average of each variable for each activity and each subject
+- Create second, independent tidy data set with the average of each variable for each activity and each subject:
+
+		Use the aggregate() function to aggregate based on subject and activity using the mean function
+		
+		
 
 
 ###Tidy Dataset Output Summary with Min and Max values:
