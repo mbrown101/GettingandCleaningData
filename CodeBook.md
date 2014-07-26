@@ -9,8 +9,8 @@
 
 Step 0: All files from the data source are UNZIPPED in the R working directory
 
-Step 1: Load each of the following files into an R object:
-  
+Step 1: Load, label and merge the following files into R objects:
+
 		~/R/UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt
 		~/R/UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt
 		~/R/UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt
