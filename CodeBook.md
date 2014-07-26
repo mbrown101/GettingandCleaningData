@@ -33,7 +33,13 @@ Programatic Steps:
 		cbind() the train objects
 		rbind() the test and training objects to form entire data set
 		
+- Select columns with data describing standard deviation and mean:
 
+		list column names with colnames()
+		From list of all column names, form new set of column names by greping for columns with mean() or std()
+		Also grep() for subject and activity index
+		Form new R object based on list of columns containing only  mean() | std() | subject | activity index
+ 		
 - Extract  measurements on the mean and standard deviation for each measurement
 - Add descriptive activities to data set
 - Label data descriptively
